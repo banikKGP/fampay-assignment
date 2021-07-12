@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "name": "nodemon-dev",
+      "program": "${workspaceFolder}/dist/index.js",
+      "request": "launch",
+      "restart": true,
+      "runtimeExecutable": "nodemon",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "pwa-node",
+      "preLaunchTask": "npm: build",
+      "env": {
+        "MONGO_HOST": "localhost",
+        "MONGO_PORT": "27017",
+        "MONGO_USER": "",
+        "MONGO_PASS": "",
+        "MONGO_URI": "mongodb://localhost:27017/fampay-ds",
+        "GAPI_KEY": "AIzaSyBSUHHRxaA3P9eVB75ugmqaBX_koy4RKfw",
+        "ES_URL": "http://localhost:9200",
+        "SEARCH_KEY": "football"
+      }
+    }
+  ]
+}
